@@ -1,6 +1,12 @@
 // Measuring the Critical Rendering Path with Navigation Timing
 // https://developers.google.com/web/fundamentals/performance/critical-rendering-path/measure-crp
 
+(function(w,g){w['GoogleAnalyticsObject']=g;
+	w[g]=w[g]||function(){(w[g].q=w[g].q||[]).push(arguments)};w[g].l=1*new Date();})(window,'ga');
+
+	ga('create', 'UA-58406702-1');
+	ga('send', 'pageview');
+
 function logCRP() {
   var t = window.performance.timing,
     dcl = t.domContentLoadedEventStart - t.domLoading,
