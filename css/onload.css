@@ -1,0 +1,10 @@
+a:visited {
+    color: #61C;
+}
+a:focus {
+    outline: dotted thin;
+}
+a:active, a:hover {
+    color: #c00;
+    outline: 0;
+}

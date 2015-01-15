@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html style="font-size: 100%;
+    overflow-y: scroll;
+    -webkit-tap-highlight-color: transparent;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: none;" lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,46 +11,60 @@
     <meta name="author" content="Rusty Good">
     <title>Russell Good: Portfolio</title>
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    
+    <script> 
+	var load = function() {
+		var fileref=document.createElement("link");
+		fileref.setAttribute("rel", "stylesheet");
+		fileref.setAttribute("type", "text/css");
+		fileref.setAttribute("href", "css/onload.css");
+		document.getElementsByTagName("head")[0].appendChild(fileref);
+	};
+	window.onload = load;
+    </script>
+
+    <style>
+    @media only screen and (max-width:480px) {
+    	body {
+    		font-size: 12px;
+		}
+	}
+	</style>
     <link href="css/print.css" rel="stylesheet" media="print">
     <script async src="http://www.google-analytics.com/analytics.js"></script>
     <script async src="js/perfmatters.js"></script>
 </head>
-
-<body>
-    <header>
-        <a href="/">
-            <img src="img/headshotCroppedShrunk.jpg">
-        </a>
-        <p>Russell Good
-            <br><span>Front-End Web Developer</span>
+<body style="margin: 0; font-size: 14px; line-height: 1.61; font-weight: 400; font-family: 'Open Sans', sans-serif; color: #333; background: #fff;">
+    <header style="max-width: 45em; margin: 0 auto; color: #C90B0B;">
+            <img style="border-radius: 40px; float: left; border: 0; max-width: 100%" src="img/headshotCroppedShrunk.jpg">
+        <p style="padding-left: 4.5em; font-size: 1.5em; font-weight: 700; padding-left: 4em;">Russell Good
+            <br><span style="font-size: .8em; font-weight: 400;">Front-End Web Developer</span>
         </p>
     </header>
-    <div class="container">
-        <div class="hero"> <strong>Continuing education with Udacity!</strong> 
+    <div style="max-width: 45em; margin: 0 auto;">
+        <div style="padding: 2em; background-color: #f8f8f8; font-size: 1.2em; border-bottom: 1px solid #ccc; border-top: 1px solid #ccc;"> <strong style="font-weight: 700;">Continuing education with Udacity!</strong> 
             <p>This is a portfolio I've put together to showcase my Audio Engineering and Web Development projects.</p>
             <br>Contact me: rwgood18@yahoo.com</br>
         </div>
-        <div class="content">
-            <ul>
-                <li>
-                    <img src="img/drumset.jpg"> <a href="studio.html">In the Studio</a> 
-                    <p>Recording at BRC Audio Productions</p>
+        <div style="padding: 1em;">
+            <ul style="margin: 1em 0; padding: 0 0 0 20px;">
+                <li style="list-style-type: none; font-size: 1.1em;">
+                    <img style="float: left; padding-right: 1em; border: 0; max-width: 100%" src="img/drumset.jpg"> <a href="studio.html">In the Studio</a> 
+                    <p style="font-size: .9em; font-style: italic;">Recording at BRC Audio Productions</p>
                 </li>
-                <li>
-                    <img src="img/soundcloud.jpg"> <a href="http://www.soundcloud.com/rusty-good">Original Music by Rusty Good</a> 
-                    <p>See what I've been up to lately on Soundcloud</p>
+                <li style="list-style-type: none; font-size: 1.1em;">
+                    <img style="float: left; padding-right: 1em; border: 0; max-width: 100%" src="img/soundcloud.jpg"> <a href="http://www.soundcloud.com/rusty-good">Original Music by Rusty Good</a> 
+                    <p style="font-size: .9em; font-style: italic;">See what I've been up to lately on Soundcloud</p>
                 </li>
-                <li>
-                    <img src="img/frogger.jpg"> <a href="game/game.html">Game Development with HTML5 Canvas and JavaScrtipt</a> 
-                    <p>I recreate the classic arcade game Frogger</p>
+                <li style="list-style-type: none; font-size: 1.1em;">
+                    <img style="float: left; padding-right: 1em; border: 0; max-width: 100%" src="img/frogger.jpg"> <a href="game/game.html">Game Development with HTML5 Canvas and JavaScrtipt</a> 
+                    <p style="font-size: .9em; font-style: italic;">I recreate the classic arcade game Frogger</p>
                 </li>
             </ul>
         </div>
-        <footer>
-            <p>&copy; Web Performance 2014 <span id="crp-stats"></span>
+        <footer style="padding: 0 .5em; border-top: 1px solid #ccc; max-width: 45em; margin: 0 auto;">
+            <p>&copy; Web Performance 2014 <span id="crp-stats" style="float: right; font-style: italic;"></span>
             </p>
         </footer>
 </body>
-
 </html>
